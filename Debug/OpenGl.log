@@ -1,10 +1,75 @@
 ﻿  Application.cpp
+  IndexBuffer.cpp
+  Renderer.cpp
+  Shader.cpp
+  Texture.cpp
+  glm.cpp
+  stb_image.cpp
+  VertexArray.cpp
+  VertexBuffer.cpp
+  Generating Code...
+Application.obj : error LNK2019: unresolved external symbol _glewInit@0 referenced in function _main
+Application.obj : error LNK2019: unresolved external symbol _glewGetErrorString@4 referenced in function _main
 Application.obj : error LNK2019: unresolved external symbol _glfwInit referenced in function _main
 Application.obj : error LNK2019: unresolved external symbol _glfwTerminate referenced in function _main
+Application.obj : error LNK2019: unresolved external symbol _glfwWindowHint referenced in function _main
 Application.obj : error LNK2019: unresolved external symbol _glfwCreateWindow referenced in function _main
 Application.obj : error LNK2019: unresolved external symbol _glfwWindowShouldClose referenced in function _main
 Application.obj : error LNK2019: unresolved external symbol _glfwPollEvents referenced in function _main
 Application.obj : error LNK2019: unresolved external symbol _glfwMakeContextCurrent referenced in function _main
-Application.obj : error LNK2019: unresolved external symbol _glfwSwapBuffers referenced in function _main
+Application.obj : error LNK2019: unresolved external symbol _glfwSwapBuffers referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
+Application.obj : error LNK2001: unresolved external symbol ___glewBindBuffer
+IndexBuffer.obj : error LNK2001: unresolved external symbol ___glewBindBuffer
+VertexBuffer.obj : error LNK2001: unresolved external symbol ___glewBindBuffer
+Application.obj : error LNK2001: unresolved external symbol ___glewBufferData
+IndexBuffer.obj : error LNK2001: unresolved external symbol ___glewBufferData
+VertexBuffer.obj : error LNK2001: unresolved external symbol ___glewBufferData
+Application.obj : error LNK2001: unresolved external symbol ___glewGenBuffers
+IndexBuffer.obj : error LNK2001: unresolved external symbol ___glewGenBuffers
+VertexBuffer.obj : error LNK2001: unresolved external symbol ___glewGenBuffers
+Application.obj : error LNK2001: unresolved external symbol ___glewAttachShader
+Shader.obj : error LNK2001: unresolved external symbol ___glewAttachShader
+Application.obj : error LNK2001: unresolved external symbol ___glewCompileShader
+Shader.obj : error LNK2001: unresolved external symbol ___glewCompileShader
+Application.obj : error LNK2001: unresolved external symbol ___glewCreateProgram
+Shader.obj : error LNK2001: unresolved external symbol ___glewCreateProgram
+Application.obj : error LNK2001: unresolved external symbol ___glewCreateShader
+Shader.obj : error LNK2001: unresolved external symbol ___glewCreateShader
+Application.obj : error LNK2001: unresolved external symbol ___glewDeleteShader
+Shader.obj : error LNK2001: unresolved external symbol ___glewDeleteShader
+Application.obj : error LNK2001: unresolved external symbol ___glewEnableVertexAttribArray
+VertexArray.obj : error LNK2001: unresolved external symbol ___glewEnableVertexAttribArray
+Application.obj : error LNK2001: unresolved external symbol ___glewGetProgramInfoLog
+Application.obj : error LNK2001: unresolved external symbol ___glewGetProgramiv
+Application.obj : error LNK2001: unresolved external symbol ___glewGetShaderInfoLog
+Shader.obj : error LNK2001: unresolved external symbol ___glewGetShaderInfoLog
+Application.obj : error LNK2001: unresolved external symbol ___glewGetShaderiv
+Shader.obj : error LNK2001: unresolved external symbol ___glewGetShaderiv
+Application.obj : error LNK2001: unresolved external symbol ___glewGetUniformLocation
+Shader.obj : error LNK2001: unresolved external symbol ___glewGetUniformLocation
+Application.obj : error LNK2001: unresolved external symbol ___glewLinkProgram
+Shader.obj : error LNK2001: unresolved external symbol ___glewLinkProgram
+Application.obj : error LNK2001: unresolved external symbol ___glewShaderSource
+Shader.obj : error LNK2001: unresolved external symbol ___glewShaderSource
+Application.obj : error LNK2001: unresolved external symbol ___glewUniformMatrix4fv
+Shader.obj : error LNK2001: unresolved external symbol ___glewUniformMatrix4fv
+Application.obj : error LNK2001: unresolved external symbol ___glewUseProgram
+Shader.obj : error LNK2001: unresolved external symbol ___glewUseProgram
+Application.obj : error LNK2001: unresolved external symbol ___glewVertexAttribPointer
+VertexArray.obj : error LNK2001: unresolved external symbol ___glewVertexAttribPointer
+Application.obj : error LNK2001: unresolved external symbol ___glewBindVertexArray
+VertexArray.obj : error LNK2001: unresolved external symbol ___glewBindVertexArray
+Application.obj : error LNK2001: unresolved external symbol ___glewGenVertexArrays
+VertexArray.obj : error LNK2001: unresolved external symbol ___glewGenVertexArrays
+IndexBuffer.obj : error LNK2001: unresolved external symbol ___glewDeleteBuffers
+VertexBuffer.obj : error LNK2001: unresolved external symbol ___glewDeleteBuffers
+Shader.obj : error LNK2001: unresolved external symbol ___glewDeleteProgram
+Shader.obj : error LNK2001: unresolved external symbol ___glewUniform1f
+Shader.obj : error LNK2001: unresolved external symbol ___glewUniform1i
+Shader.obj : error LNK2001: unresolved external symbol ___glewUniform4f
+Shader.obj : error LNK2001: unresolved external symbol ___glewValidateProgram
+Texture.obj : error LNK2001: unresolved external symbol ___glewActiveTexture
+VertexArray.obj : error LNK2001: unresolved external symbol ___glewDeleteVertexArrays
 C:\Users\Skyler Crank\Documents\OpenGL\OpenGl\Dependencies\GLFW\lib-vc2022\glfw3.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
-C:\Users\Skyler Crank\Documents\OpenGL\OpenGl\Debug\OpenGl.exe : fatal error LNK1120: 7 unresolved externals
+C:\Users\Skyler Crank\Documents\OpenGL\OpenGl\Dependencies\GLEW\lib\Release\x64\glew32s.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\Skyler Crank\Documents\OpenGL\OpenGl\Debug\OpenGl.exe : fatal error LNK1120: 39 unresolved externals

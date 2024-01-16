@@ -25,7 +25,16 @@ void Renderer::Draw(VertexArray& va, const IndexBuffer& ib, const Shader& shader
 {
     shader.Bind();
     va.Bind();
-    ib.Bind();
+   // ib.Bind();
     GLCall(glDrawElements(GL_TRIANGLES, ib.GetCount(), GL_UNSIGNED_INT, nullptr));
+
+}
+
+void Renderer::DrawWithoutIndex(VertexArray& va, const Shader& shader) const
+{
+    shader.Bind();
+    va.Bind();
+    // ib.Bind();
+    GLCall(glDrawElements(GL_TRIANGLES, 142068, GL_UNSIGNED_INT, nullptr));
 
 }

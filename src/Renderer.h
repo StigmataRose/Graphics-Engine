@@ -21,5 +21,5 @@ class Renderer
 public:
     void Clear() const;
     void Draw(VertexArray& va, const IndexBuffer& ib, const Shader& shader) const;
-
+    void DrawWithoutIndex(VertexArray& va, const Shader& shader) const;
 };

@@ -13,7 +13,7 @@
 #include "Texture.h"
 #include "glm/glm.hpp"
 #include "glm/gtc/matrix_transform.hpp"
-
+#include "plyLoad.h"
 int main(void)
 {
     GLFWwindow* window;
@@ -29,7 +29,7 @@ int main(void)
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(1000, 1000, "PLY Viewer", NULL, NULL);
+    window = glfwCreateWindow(1920, 1080, "PLY Viewer", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -47,11 +47,17 @@ int main(void)
 
     std::cout << glGetString(GL_VERSION) << std::endl;
     {
+
+        //// Load .ply file
+        //const char* filePath = "path/to/your/file.ply";
+        //loadPLY(filePath);
+
+        // topleft - topright - bottomright - bottomleft
         float positions[] = {
-           -0.5f, -0.5f, 0.0f, 0.0f,
-            0.5f, -0.5f, 1.0f, 0.0f,
-            0.5f, 0.5f, 1.0f, 1.0f,
-           -0.5f, 0.5f, 0.0f, 1.0f
+           860.0f, 440.0f, 0.0f, 0.0f,
+           1060.0f, 440.0f, 1.0f, 0.0f,
+           1060.0f, 640.0f, 1.0f, 1.0f,
+           860.0f, 640.0f, 0.0f, 1.0f
         };
 
         unsigned int indices[]{
@@ -74,12 +80,15 @@ int main(void)
         IndexBuffer ib(indices, 6);
 
         // Left - Right - Bottom - Top
-        glm::mat4 proj = glm::ortho(-2.0f, 2.0f, -1.5f, 1.5f, -1.0f, 1.0f);
+        glm::mat4 proj = glm::ortho(0.0f, 1920.0f, 0.0f, 1080.0f, -1.0f, 1.0f);
+        glm::mat4 view = glm::translate(glm::mat4(1.0f), glm::vec3(-0.0f, 0.0f, 0.0f));
+        glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.0f));
+        glm::mat4 mvp = proj * view * model;
 
         Shader shader("res/shaders/Basic.shader");
         shader.Bind();
         shader.SetUniform4f("u_Color", 0.8f, 0.3f, 0.8f, 1.0f);
-        shader.SetUniformMat4f("u_MVP", proj);
+        shader.SetUniformMat4f("u_MVP", mvp);
 
         Texture texture("res/textures/logo.png");
         texture.Bind();
@@ -106,9 +115,9 @@ int main(void)
             shader.Bind();
             shader.SetUniform4f("u_Color", r, 0.3f, 0.8f, 1.0f);
 
-           
+
             renderer.Draw(va, ib, shader);
-     
+
 
             if (r > 1.0f)
                 increment = -0.05f;
@@ -125,7 +134,7 @@ int main(void)
             glfwPollEvents();
         }
     }
-   // glDeleteProgram(shader);
+    // glDeleteProgram(shader);
 
     glfwTerminate();
     return 0;
