@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an attempt to create an OpenGL render engine from scratch, specifically designed for projecting 3D models in .ply, .obj, and other 3D formats. The primary focus of the project is on implementing a projection matrix to facilitate accurate rendering.
+This project is an attempt to create an OpenGL render engine from scratch, specifically designed for projecting 3D models in .ply, .obj, and other 3D formats. The primary focus of the project is on implementing a projection matrix to facilitate accurate rendering. This project was created to foster familiarity and proficiency in writing and implementing the graphics pipeline. It covers aspects ranging from vertex and fragment shaders to graphics card programming and establishing communication with the CPU.
 
 ## Features
 
@@ -15,12 +15,6 @@ This project is an attempt to create an OpenGL render engine from scratch, speci
 ## Application Screenshot
 
 ![Application Screenshot](application.png)
-
-## Usage
-
-1. Clone the repository.
-2. Open the project in your preferred development environment.
-3. Build and run the application.
 
 ## Current Status
 
