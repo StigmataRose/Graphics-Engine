@@ -1,3 +1,0 @@
-C:\Users\Skyler Crank\Documents\OpenGL\OpenGl\OpenGl\x64\Debug\OpenGl.vcxproj.MdMergeInputs.cache
-C:\Users\Skyler Crank\Documents\OpenGL\OpenGl\OpenGl\x64\Debug\OpenGl.vcxproj.cppwinrt_plat.cache
-C:\Users\Skyler Crank\Documents\OpenGL\OpenGl\OpenGl\x64\Debug\OpenGl.vcxproj.cppwinrt_comp.cache
