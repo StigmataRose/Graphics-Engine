@@ -1,9 +1,2 @@
 ﻿  Application.cpp
-  IndexBuffer.cpp
-  Renderer.cpp
-  Shader.cpp
-  VertexArray.cpp
-C:\Users\Skyler Crank\Documents\OpenGL\OpenGl\OpenGl\src\VertexArray.cpp(26,1): warning C4312: 'type cast': conversion from 'unsigned int' to 'const void *' of greater size
-  VertexBuffer.cpp
-  Generating Code...
   OpenGl.vcxproj -> C:\Users\Skyler Crank\Documents\OpenGL\OpenGl\x64\Debug\OpenGl.exe
