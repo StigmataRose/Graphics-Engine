@@ -8,6 +8,8 @@ The primary focus of the project is on implementing a projection matrix to facil
 
 - OpenGL render engine
 - Projection matrix implementation
+- Use Image as Texture
+- Project 2D Shapes
 - Support for .ply and .obj 3D formats (Work in progress)
 - Lighting (Work in progress)
 - File to buffer conversion (Work in progress)
